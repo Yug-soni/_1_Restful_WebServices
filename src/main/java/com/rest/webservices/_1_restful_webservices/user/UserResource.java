@@ -1,7 +1,9 @@
 package com.rest.webservices._1_restful_webservices.user;
 
 import org.springframework.hateoas.EntityModel;
+
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
+
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +16,7 @@ import java.util.List;
 @RestController
 public class UserResource {
 
-    private UserDaoService userDaoService;
+    private final UserDaoService userDaoService;
 
     public UserResource(UserDaoService userDaoService) {
         this.userDaoService = userDaoService;

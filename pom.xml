@@ -38,6 +38,32 @@
             <artifactId>spring-boot-starter-hateoas</artifactId>
         </dependency>
 
+        <!-- Dependency for the Hal Explorer -->
+        <!-- Link to go to the actuator  -->
+        <!-- http://localhost:8080/actuator  -->
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-security</artifactId>-->
+<!--        </dependency>-->
+
+        <!-- Dependency for the Hal Explorer -->
+        <!-- Link to go to the hal explorer  -->
+        <!-- http://localhost:8080  -->
+
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-rest-hal-explorer</artifactId>
+        </dependency>
+
+        <!-- Dependency for the Swagger -->
+        <!-- Link to the check you documentation given by the swagger ui  -->
+        <!-- http://localhost:8080/swagger-ui/index.html  -->
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-ui</artifactId>
